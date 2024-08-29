@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var numero1 = parseInt(prompt("Escolha um número: "))
+        var numero2 = parseInt(prompt("Escolha um segundo número: "))
+
+        if (numero2 == numero1) {
+            alert("Escolha um número diferente do primeiro: ")
+            var numero2 = parseInt(prompt("Escolha um segundo número: "))
+        }
+
+        var numero3 = parseInt(prompt("Escolha um terceiro número: "))
+        if (numero3 == numero1 || numero3 == numero2){
+            alert("Escolha um número diferente do primeiro e do segundo número")
+            var numero3 = parseInt(prompt(("Escolha um terceiro número")))
+        }
+
+        if (numero1 > numero2 && numero3 > numero2) {
+            alert("A soma entre o número " + numero1 + " e " + numero3 + " é igual a: " + (numero1 + numero3))
+        }
+        else if (numero1 > numero3 && numero2 > numero3) {
+            alert("A soma entre o número " + numero1 + " e " + numero2 + " é igual a: " + (numero1 + numero2))
+        }
+        else if (numero2 > numero1 && numero3 > numero1) {
+            alert("A soma entre o número " + numero2 + " e " + numero3 + " é igual a: " + (numero2 + numero3))
+        }
+        else if (numero2 > numero3 && numero1 > numero3) {
+            alert("A soma entre o número " + numero2 + " e " + numero1 + " é igual a: " + (numero2 + numero1))
+        }
+        else if (numero3 > numero1 && numero2 > numero1) {
+            alert("A soma entre o número " + numero3 + " e " + numero2 + " é igual a: " + (numero3 + numero2))
+        }
+        else if (numero3 > numero2 && numero1 > numero2) {
+            alert("A soma entre o número " + numero3 + " e " + numero1 + " é igual a: " + (numero3 + numero1))
+        } else {
+            alert("Você escolheu um número repitido, ou então escolheu algo inválido")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
