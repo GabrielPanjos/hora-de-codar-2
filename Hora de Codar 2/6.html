@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        var numero1 = parseInt(prompt(("Digite um número")))
+        var numero2 = parseInt(prompt(("Digite um segundo número")))
+        var numero3 = parseInt(prompt(("Digite um terceiro número")))
+        var numero4 = parseInt(prompt(("Digite um quarto número")))
+
+
+        if (numero1 > numero2 && numero1 > numero3 && numero1 > numero4) {
+            document.write("O primeiro número escolhido foi: " + numero1 + ", O ultimo número escolhido foi: " + numero4 + ", E o maior número escolhido foi: " + numero1)
+        } else if (numero2 > numero1 && numero2 > numero3 && numero2 > numero4) {
+            document.write("O primeiro número escolhido foi: " + numero1 + ", O ultimo número escolhido foi: " + numero4 + ", E o maior número escolhido foi: " + numero2)
+        } else if (numero3 > numero1 && numero3 > numero2 && numero3 > numero4) {
+            document.write("O primeiro número escolhido foi: " + numero1 + ", O ultimo número escolhido foi: " + numero4 + ", E o maior número escolhido foi: " + numero3)
+        } else if (numero4 > numero1 && numero4 > numero2 && numero4 > numero3) {
+            document.write("O primeiro número escolhido foi: " + numero1 + ", O ultimo número escolhido foi: " + numero4 + ", E o maior número escolhido foi: " + numero4)
+        } else {
+            document.write("Todos os números escolhidos tem o mesmo valor.")
+        }
+
+    </script>
 </head>
 <body>
     

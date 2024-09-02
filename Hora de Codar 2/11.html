@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var numero1 = parseInt(prompt("Escolha um número: "))
+        var numero2 = parseInt(prompt("Escolha outro número: "))
+
+        var calculo = parseInt(prompt("Agora digite 1 para somar, 2 para subtrair, 3 para dividir ou 4 para multiplicar"))
+
+        while (calculo < 1 || calculo > 4) {
+            var calculo = parseInt(prompt("Resposta inválida. Digite 1 para somar, 2 para subtrair, 3 para dividir ou 4 para multiplicar"))
+        }
+
+        if (calculo == 1) {
+            document.write(numero1 + " mais " + numero2 + " é igual a " + (numero1 + numero2))
+        }
+        if (calculo == 2) {
+            document.write(numero1 + " menos " + numero2 + " é igual a " + (numero1 - numero2))
+        }
+        if (calculo == 3) {
+            document.write(numero1 + " dividido por " + numero2 + " é igual a " + (numero1 / numero2))
+        }
+        if (calculo == 4) {
+            document.write(numero1 + " multiplicado por " + numero2 + " é igual a " + (numero1 * numero2))
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

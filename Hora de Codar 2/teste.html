@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="contador"></div>
+
+        <script>
+
+        var inicio = 30
+        var fim = 0
+
+        var mensagem = document.getElementById("contador")
+
+        var intervalo = setInterval(function () {
+            mensagem.innerHTML = "<h1> A bomba vai explodir em " + inicio + " segundos </h1>"
+            inicio--
+
+            if (inicio == 0) {
+                clearInterval(intervalo)
+                mensagem.innerHTML = "<h1> A BOMBA EXPLODIU! </h1>"
+            }
+        }, 250);
+
+    </script>
+</body>
+
+</html>

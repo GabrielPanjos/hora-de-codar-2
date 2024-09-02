@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        alert("Escolha 4 números, cada um precisa ser maior que 0 e menor que 10")
+
+        var numero1 = parseInt(prompt("Digite um número: "));
+        while (numero1 < 0 || numero1 > 10) {
+            numero1 = parseInt(prompt("Você escolheu um número inválido, escolha outro: "));
+        }
+
+        var numero2 = parseInt(prompt("Digite um número: "));
+        while (numero2 < 0 || numero2 > 10) {
+            numero2 = parseInt(prompt("Você escolheu um número inválido, escolha outro: "));
+        }
+
+        var numero3 = parseInt(prompt("Digite um número: "));
+        while (numero3 < 0 || numero3 > 10) {
+            numero3 = parseInt(prompt("Você escolheu um número inválido, escolha outro: "));
+        }
+
+        var numero4 = parseInt(prompt("Digite um número: "));
+        while (numero4 < 0 || numero4 > 10) {
+            numero4 = parseInt(prompt("Você escolheu um número inválido, escolha outro: "));
+        }
+
+        var media = ((numero1 + numero2 + numero3 + numero4) / 4)
+        if (media > 5) {
+            document.write("Você passou no Teste!")
+        } else {
+            document.write("Tente novamente...")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
